@@ -167,6 +167,16 @@ that I can see:
     
 If you see ways to solve these problems, please feel free to fork this code and implement your changes. 
 
+ER Design
+---------
+
+![screenshot](https://raw.github.com/aghalarp/play-example-form/master/doc/ERD-play-example-form.png)
+
+Above is an ER diagram of the play-example-form system. Student information other than name and password are taken from other entities to allow for the user to easily create or delete existing hobbies, grade levels, GPA intervals, and majors. The stored values for these entities can be stored in either an internal data structure (such as a map or list, as denoted in the ERD), or in database tables.
+As noted in the ER diagram, GradeLevel and GpaRange are required form fields (that is, all Students must have these two fields), while Hobbies and Majors are not required and can have multiple selections.
+
+
+
 Screencast
 ----------
 
@@ -184,4 +194,3 @@ Acknowledgements
 This example is a descendent of the original [play-form-kludge](https://github.com/philipmjohnson/play-form-kludge/tree/original)
 and [Jason Pearson](https://github.com/kaeawc)'s [very helpful improvements](https://github.com/philipmjohnson/play-form-kludge).
 
-    
